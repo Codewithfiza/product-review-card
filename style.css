@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color:   hsl(30, 38%, 92%);
+    display: flex;
+    place-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+strong {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+/* for large screen */
+main {
+    background-color: white;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.header2 {
+    display: none;
+}
+header img {
+height: 28rem;
+border-top-left-radius: 1rem;
+border-bottom-left-radius: 1rem;
+
+}
+
+.desktop-img {
+    display: block;
+  }
+  .mobile-image {
+    display: none;
+  }
+  section {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    justify-content: space-between;
+}
+section h1 {
+    font-size: 2em;
+    padding-right: 2rem;
+}
+section p {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.5em;
+    font-size: 14px;
+}
+.description {
+    letter-spacing: 0;
+    line-height: 1.5rem;
+}
+article {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+article h1 {
+font-size: 2rem;
+color: hsl(158, 36%, 37%);
+}
+article  p {
+font-size: 14px;
+color: hsl(228, 12%, 48%);
+}
+article del {
+color: hsl(228, 12%, 48%);
+}
+div{
+display: flex;
+place-content: center;
+margin-top: 1.5rem;
+}
+button {
+padding: 1rem;
+width: 90%;
+display: flex;
+gap: 0.5rem;
+place-content: center;
+background-color: hsl(158, 36%, 37%);
+color: white;
+border: none;
+border-radius: 0.5rem;
+font-weight: 700;
+}
+button:hover {
+    cursor:pointer;
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 550px) {
+    main {
+        height: 40rem;
+        width: 90%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+    }
+    .header2 {
+        display: block;
+    }
+    .desktop-img{
+        display: none;
+    }
+    
+    header img {
+        height: 14rem;
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    
+    }
+    .mobile-image {
+        display: block;
+      }
+ 
+    section {
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        height: 13rem;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        justify-content: space-between;
+    }
+    section h1 {
+        font-size: 2em;
+    }
+    section p {
+        color: hsl(228, 12%, 48%);
+        letter-spacing: 0.5em;
+        font-size: 14px;
+    }
+    .description {
+        letter-spacing: 0;
+        line-height: 1.5rem;
+    }
+    article {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+    }
+    article h1 {
+        font-size: 2rem;
+        color: hsl(158, 36%, 37%);
+    }
+    article  p {
+        font-size: 14px;
+        color: hsl(228, 12%, 48%);
+    }
+    article del {
+        color: hsl(228, 12%, 48%);
+    }
+    div{
+        display: flex;
+        place-content: center;
+        margin-top: 1.5rem;
+    }
+    button {
+    padding: 1rem;
+    width: 90%;
+    display: flex;
+    gap: 0.5rem;
+    place-content: center;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    }
+    
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    
+    main {
+        width: 35%;
+    }
+    .description {
+        line-height: 1rem;
+    }
+}
